@@ -274,7 +274,7 @@ footer img{height:34px}footer a{text-decoration:none}footer a:hover{color:#fff}f
 (()=>{
 const WA='https://wa.me/qr/6TPNW4MIJFJYF1';
 // o link de QR do WhatsApp não aceita texto pronto; quando houver o número, troque WA_NUM e as mensagens entram sozinhas
-const WA_NUM='';
+const WA_NUM='5554996697600';
 const link=m=>WA_NUM?`https://wa.me/${WA_NUM}?text=${encodeURIComponent(m||'Olá, AN Tunes! Quero um orçamento.')}`:WA;
 document.querySelectorAll('[data-wa]').forEach(a=>{a.href=link(a.dataset.wa);a.target='_blank';a.rel='noopener'});
 const top=document.getElementById('top');const onS=()=>top.classList.toggle('solid',scrollY>30);addEventListener('scroll',onS,{passive:true});onS();
